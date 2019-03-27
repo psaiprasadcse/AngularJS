@@ -1,0 +1,36 @@
+    <!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+        <script src="angular.min.js"></script>  
+    </head>  
+    <body ng-app="myModule">  
+    <div ng-controller="myCtrl" >  
+    <h2>Hello {{fName}} !</h2>  
+    <h2>Hello {{lName}} !</h2>   
+    </div>  
+
+    <div >  
+    <h2>Hello {{fName}} !</h2>  
+    <h2>Hello {{lName}} !</h2>   
+    </div> 
+      
+    <script>  
+    var myapp= angular.module("myModule", []);  
+    var myController=function($scope) {  
+            $scope.fName = "Sai"  
+            $scope.lName = "Prasad";  
+        };  
+  
+  myapp.controller("myCtrl",myController)
+   
+    </script>  
+    </body>  
+    </html>   
+
+// For Different view Different Model/Controller can be Attached
+//module is the main method of AngularJs 
+//[] indcates it is independent
+//$scope is act as a model it takes the data from user also The Scope is an object that is specified as a binding part between the HTML (view) and the JavaScript (controller)
+//Register a Module 
+//Assign a controller to that module
+//Bind the model(BL) to the  Controller

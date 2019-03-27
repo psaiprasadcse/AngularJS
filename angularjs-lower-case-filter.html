@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html>  
+<script src="angular.min.js"></script>  
+<body>  
+  
+<div ng-app="myApp" ng-controller="caseCtrl">  
+<p>The following text is written in lowercase letters.</p>  
+<h1>{{txt | lowercase}}</h1>  
+  
+</div>  
+  
+<script>  
+var app = angular.module('myApp', []);  
+app.controller('caseCtrl', function($scope) {  
+    $scope.txt = "WELCOME";  
+});  
+</script>  
+</body>  
+</html>  
+
+ 

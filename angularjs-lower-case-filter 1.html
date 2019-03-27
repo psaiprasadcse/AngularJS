@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html>  
+<script src="angular.min.js"></script>  
+<body ng-app="">  
+  
+<div>  
+<p> Enter Text:<input type="text" ng-model="LText"></p>
+<p ng-bind="LText"</p>    
+<p>The Above text is written in lowercase letters.</p> 
+<h1>{{LText | lowercase}}</h1>  
+ 
+</div>  
+
+<div>  
+<p> Enter Text:<input type="text" ng-model="UText"></p>
+<p ng-bind="UText"</p>    
+<p>The Above text is written in uppercase letters.</p> 
+<h1>{{UText | uppercase}}</h1>  
+ 
+</div>   
+
+</body>  
+</html>  
+
+ 

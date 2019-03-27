@@ -1,0 +1,42 @@
+ <!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+        <script src="angular.min.js"></script>  
+    </head>  
+    <body ng-app="myModule">  
+    <div ng-controller="myCtrl" >  
+    <h2>Hello {{fName}} !</h2>  
+    <h2>Hello {{lName}} !</h2>   
+    </div>  
+      
+    <script>  
+angular.module("myModule", [])  
+    .controller("myCtrl", function($scope) {  
+         $scope.fName = "Sai"  
+            $scope.lName = "Prasad";
+    } );  
+</script>  
+</body>  
+</html> 
+
+
+/* View Part
+<div ng-controller="myCtrl" >  
+    <h2>Hello {{fName}} !</h2>  
+    <h2>Hello {{lName}} !</h2>   
+    </div>  
+
+
+
+Controller Part
+
+    <script>  
+angular.module("myModule", [])  
+    .controller("myCtrl", function($scope) {  
+         $scope.fName = "Sai"  
+            $scope.lName = "Prasad";
+    } );  
+</script> 
+
+
+*/
